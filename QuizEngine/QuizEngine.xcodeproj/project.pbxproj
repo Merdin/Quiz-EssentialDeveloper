@@ -612,7 +612,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = QuizEngine/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.merdin.QuizEngine;
 				PRODUCT_NAME = QuizEngine;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -641,7 +641,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = QuizEngine/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.merdin.QuizEngine;
 				PRODUCT_NAME = QuizEngine;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -663,7 +663,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = QuizEngineTests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = QuizEngine/Info.plist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -684,7 +684,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = QuizEngineTests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = QuizEngine/Info.plist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;

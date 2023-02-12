@@ -36,8 +36,8 @@
 		D3AC69F529952E6600079195 /* WrongAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AC69F429952E6600079195 /* WrongAnswerCell.swift */; };
 		D3AC6A22299541B100079195 /* NavigationControllerRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AC6A21299541B100079195 /* NavigationControllerRouterTest.swift */; };
 		D3AC6A242995422D00079195 /* NavigationControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AC6A232995422D00079195 /* NavigationControllerRouter.swift */; };
-		D3B1297329987B8400F6C839 /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B1297229987B8400F6C839 /* QuizEngine.framework */; };
-		D3B1297429987B8400F6C839 /* QuizEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3B1297229987B8400F6C839 /* QuizEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D3CCB5A3299887CA0042B34A /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CCB5A2299887CA0042B34A /* QuizEngine.framework */; };
+		D3CCB5A4299887CA0042B34A /* QuizEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3CCB5A2299887CA0042B34A /* QuizEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,13 +58,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D3B1297529987B8400F6C839 /* Embed Frameworks */ = {
+		D3CCB5A5299887CA0042B34A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D3B1297429987B8400F6C839 /* QuizEngine.framework in Embed Frameworks */,
+				D3CCB5A4299887CA0042B34A /* QuizEngine.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,7 +105,7 @@
 		D3AC69F429952E6600079195 /* WrongAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongAnswerCell.swift; sourceTree = "<group>"; };
 		D3AC6A21299541B100079195 /* NavigationControllerRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouterTest.swift; sourceTree = "<group>"; };
 		D3AC6A232995422D00079195 /* NavigationControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouter.swift; sourceTree = "<group>"; };
-		D3B1297229987B8400F6C839 /* QuizEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QuizEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3CCB5A2299887CA0042B34A /* QuizEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QuizEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3B1297329987B8400F6C839 /* QuizEngine.framework in Frameworks */,
+				D3CCB5A3299887CA0042B34A /* QuizEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +141,7 @@
 				D317A2462994165900AC9EB9 /* QuizAppTests */,
 				D317A2502994165900AC9EB9 /* QuizAppUITests */,
 				D317A22E2994165700AC9EB9 /* Products */,
-				D3B1297129987B8400F6C839 /* Frameworks */,
+				D3CCB5A1299887CA0042B34A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -374,10 +374,10 @@
 			path = Routing;
 			sourceTree = "<group>";
 		};
-		D3B1297129987B8400F6C839 /* Frameworks */ = {
+		D3CCB5A1299887CA0042B34A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D3B1297229987B8400F6C839 /* QuizEngine.framework */,
+				D3CCB5A2299887CA0042B34A /* QuizEngine.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -392,7 +392,7 @@
 				D317A2292994165700AC9EB9 /* Sources */,
 				D317A22A2994165700AC9EB9 /* Frameworks */,
 				D317A22B2994165700AC9EB9 /* Resources */,
-				D3B1297529987B8400F6C839 /* Embed Frameworks */,
+				D3CCB5A5299887CA0042B34A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
