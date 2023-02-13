@@ -1,5 +1,5 @@
 //
-//  GameTest.swift
+//  DeprecatedGameTest.swift
 //  QuizEngineTests
 //
 //  Created by Merdin Kahrimanovic on 09/02/2023.
@@ -9,7 +9,8 @@ import Foundation
 import XCTest
 import QuizEngine
 
-class GameTest: XCTestCase {
+@available(*, deprecated)
+class DeprecatedGameTest: XCTestCase {
     let router = RouterSpy()
     var game: Game<String, String, RouterSpy>!
     
