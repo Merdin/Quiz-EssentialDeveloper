@@ -11,7 +11,7 @@ import XCTest
 
 class FlowTest: XCTestCase {
     
-    private let delegate = RouterSpy()
+    private let delegate = DelegateSpy()
     
     func test_start_withNoQuestions_doesNotRouteToQuestion() {
         makeSUT(questions: []).start()
@@ -124,23 +124,33 @@ class FlowTest: XCTestCase {
     
     // MARK: Helpers
     
-    private func makeSUT(questions: [String], scoring: @escaping ([String: String]) -> Int = { _ in 0 } ) -> Flow<RouterSpy> {
+    private func makeSUT(questions: [String], scoring: @escaping ([String: String]) -> Int = { _ in 0 } ) -> Flow<DelegateSpy> {
         return Flow(questions: questions, router: delegate, scoring: scoring)
     }
     
-    private class RouterSpy: Router {
+    private class DelegateSpy: Router, QuizDelegate {
+       
+        
         var routedQuestions: [String] = []
         var routedResult: Result<String, String>? = nil
         
         var answerCallback: (String) -> Void = { _ in }
         
-        func routeTo(question: String, answerCallback: @escaping (String) -> Void) {
+        func handle(question: String, answerCallback: @escaping (String) -> Void) {
             routedQuestions.append(question)
             self.answerCallback = answerCallback
         }
         
-        func routeTo(result: Result<String, String>) {
+        func handle(result: QuizEngine.Result<String, String>) {
             routedResult = result
+        }
+        
+        func routeTo(question: String, answerCallback: @escaping (String) -> Void) {
+            handle(question: question, answerCallback: answerCallback)
+        }
+        
+        func routeTo(result: Result<String, String>) {
+            handle(result: result)
         }
     }
 }
