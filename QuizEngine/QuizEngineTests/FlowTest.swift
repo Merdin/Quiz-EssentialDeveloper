@@ -11,8 +11,6 @@ import XCTest
 
 class FlowTest: XCTestCase {
     
-    private let delegate = DelegateSpy()
-    
     func test_start_withNoQuestions_doesNotDelegateQuestionHandling() {
         makeSUT(questions: []).start()
         
@@ -124,8 +122,19 @@ class FlowTest: XCTestCase {
     
     // MARK: Helpers
     
+    private let delegate = DelegateSpy()
+    private weak var weakSUT: Flow<DelegateSpy>?
+    
+    override func tearDown() {
+        super.tearDown()
+        
+        XCTAssertNil(weakSUT)
+    }
+    
     private func makeSUT(questions: [String], scoring: @escaping ([String: String]) -> Int = { _ in 0 } ) -> Flow<DelegateSpy> {
-        return Flow(questions: questions, router: delegate, scoring: scoring)
+        let sut = Flow(questions: questions, router: delegate, scoring: scoring)
+        weakSUT = sut
+        return sut
     }
     
     private class DelegateSpy: Router, QuizDelegate {
