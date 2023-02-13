@@ -136,7 +136,6 @@ class FlowTest: XCTestCase {
     private class DelegateSpy: QuizDelegate {
         var questionsAsked: [String] = []
         var answerCompletions: [(String) -> Void] = []
-        var handledResult: Result<String, String>? = nil
         var completedQuizzes: [[(String, String)]] = []
         
         func answer(for question: String, completion: @escaping (String) -> Void) {
