@@ -13,6 +13,8 @@ class Flow <Delegate: QuizDelegate> {
     
     private let delegate: Delegate
     private let questions: [Question]
+    #warning("Rename newAnswers")
+    private var newAnswers: [(Question, Answer)] = []
     private var answers: [Question: Answer] = [:]
     private var scoring: ([Question: Answer]) -> Int
     
@@ -31,7 +33,7 @@ class Flow <Delegate: QuizDelegate> {
             let question = questions[index]
             delegate.answer(for: question, completion: answer(for: question, at: index))
         } else {
-            delegate.didCompleteQuiz(withAnswers: [])
+            delegate.didCompleteQuiz(withAnswers: newAnswers)
             delegate.handle(result: result())
         }
     }
@@ -42,6 +44,7 @@ class Flow <Delegate: QuizDelegate> {
     
     private func answer(for question: Question, at index: Int) -> (Answer) -> Void {
         return { [weak self] answer in
+            self?.newAnswers.append((question, answer))
             self?.answers[question] = answer
             self?.delegateQuestionHandling(after: index)
         }
