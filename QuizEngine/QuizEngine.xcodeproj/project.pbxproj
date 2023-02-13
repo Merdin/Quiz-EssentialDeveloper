@@ -27,6 +27,8 @@
 		D3C4FABD299AD145004D286A /* QuizTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4FAB8299ACE71004D286A /* QuizTest.swift */; };
 		D3C4FABF299AF244004D286A /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4FABE299AF244004D286A /* Assertions.swift */; };
 		D3C4FAC0299AF248004D286A /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4FABE299AF244004D286A /* Assertions.swift */; };
+		D3C4FAC2299AF297004D286A /* DelegateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4FAC1299AF297004D286A /* DelegateSpy.swift */; };
+		D3C4FAC3299AF297004D286A /* DelegateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4FAC1299AF297004D286A /* DelegateSpy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,7 @@
 		D3C4FAB8299ACE71004D286A /* QuizTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTest.swift; sourceTree = "<group>"; };
 		D3C4FABA299AD13B004D286A /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		D3C4FABE299AF244004D286A /* Assertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assertions.swift; sourceTree = "<group>"; };
+		D3C4FAC1299AF297004D286A /* DelegateSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateSpy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,7 @@
 				D3AC69FA2995396000079195 /* DeprecatedGameTest.swift */,
 				D3C4FAB8299ACE71004D286A /* QuizTest.swift */,
 				D3C4FABE299AF244004D286A /* Assertions.swift */,
+				D3C4FAC1299AF297004D286A /* DelegateSpy.swift */,
 			);
 			path = QuizEngineTests;
 			sourceTree = "<group>";
@@ -330,6 +334,7 @@
 				D3AC69FB2995396000079195 /* DeprecatedGameTest.swift in Sources */,
 				D3C4FABF299AF244004D286A /* Assertions.swift in Sources */,
 				D3C4FAB9299ACE71004D286A /* QuizTest.swift in Sources */,
+				D3C4FAC2299AF297004D286A /* DelegateSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +358,7 @@
 				D3AC6A1B2995400500079195 /* DeprecatedGameTest.swift in Sources */,
 				D3C4FAC0299AF248004D286A /* Assertions.swift in Sources */,
 				D3C4FABD299AD145004D286A /* QuizTest.swift in Sources */,
+				D3C4FAC3299AF297004D286A /* DelegateSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
