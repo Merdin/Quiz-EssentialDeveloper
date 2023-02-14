@@ -71,7 +71,7 @@ class iOSViewControllerFactoryTest: XCTestCase {
     
     // MARK: Helpers
     
-    func makeSUT(options: Dictionary<Question<String>, [String]> = [:], correctAnswers: [(question: Question<String>, answers: [String])] = []) -> iOSViewControllerFactory {
+    func makeSUT(options: Dictionary<Question<String>, [String]> = [:], correctAnswers: [(question: Question<String>, answer: [String])] = []) -> iOSViewControllerFactory {
         return iOSViewControllerFactory(options: options, correctAnswers: correctAnswers)
     }
     
