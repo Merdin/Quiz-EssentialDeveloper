@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D30B6FCA2996900800749FDA /* ResultsPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B6FC92996900800749FDA /* ResultsPresenterTest.swift */; };
-		D30B6FCC2996908500749FDA /* ResultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B6FCB2996908500749FDA /* ResultHelper.swift */; };
 		D30B6FCE2996911F00749FDA /* ResultsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B6FCD2996911F00749FDA /* ResultsPresenter.swift */; };
 		D30B6FD029969B0F00749FDA /* QuestionPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B6FCF29969B0F00749FDA /* QuestionPresenterTest.swift */; };
 		D30B6FD229969B7000749FDA /* QuestionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B6FD129969B7000749FDA /* QuestionPresenter.swift */; };
@@ -75,7 +74,6 @@
 
 /* Begin PBXFileReference section */
 		D30B6FC92996900800749FDA /* ResultsPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsPresenterTest.swift; sourceTree = "<group>"; };
-		D30B6FCB2996908500749FDA /* ResultHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultHelper.swift; sourceTree = "<group>"; };
 		D30B6FCD2996911F00749FDA /* ResultsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsPresenter.swift; sourceTree = "<group>"; };
 		D30B6FCF29969B0F00749FDA /* QuestionPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenterTest.swift; sourceTree = "<group>"; };
 		D30B6FD129969B7000749FDA /* QuestionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenter.swift; sourceTree = "<group>"; };
@@ -367,7 +365,6 @@
 		D32DCC432998686B00257788 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				D30B6FCB2996908500749FDA /* ResultHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -566,7 +563,6 @@
 				D3AC6A22299541B100079195 /* NavigationControllerRouterTest.swift in Sources */,
 				D317A261299416F100AC9EB9 /* QuestionViewControllerTest.swift in Sources */,
 				D30B6FD029969B0F00749FDA /* QuestionPresenterTest.swift in Sources */,
-				D30B6FCC2996908500749FDA /* ResultHelper.swift in Sources */,
 				D3AC69E92995279200079195 /* TableViewHelpers.swift in Sources */,
 				D3AC69E3299522B100079195 /* ResultsViewController.swift in Sources */,
 				D3AC28CB2995791D001D7973 /* iOSViewControllerFactoryTest.swift in Sources */,
