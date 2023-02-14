@@ -55,13 +55,10 @@ class ScoreTest: XCTestCase {
     }
     
     private class BasicScore {
-        static func score(for answers: [String], comparingTo MatchingAnswers: [String] = []) -> Int {
-            var score = 0
-            for (index, answer) in answers.enumerated() {
-                if index >= MatchingAnswers.count { return score }
-                score += answer == MatchingAnswers[index] ? 1 : 0
+        static func score(for answers: [String], comparingTo correctAnswers: [String] = []) -> Int {
+            return zip(answers, correctAnswers).reduce(0) { score, tuple in
+                return score + (tuple.0 == tuple.1 ? 1 : 0)
             }
-            return score
         }
     }
 }
