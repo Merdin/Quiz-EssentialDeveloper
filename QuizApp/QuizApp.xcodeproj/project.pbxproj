@@ -38,8 +38,8 @@
 		D3AC6A242995422D00079195 /* NavigationControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AC6A232995422D00079195 /* NavigationControllerRouter.swift */; };
 		D3CCB5A3299887CA0042B34A /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CCB5A2299887CA0042B34A /* QuizEngine.framework */; };
 		D3CCB5A4299887CA0042B34A /* QuizEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3CCB5A2299887CA0042B34A /* QuizEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D3D1D51F299BD04C0038D1AA /* ScoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D1D51E299BD04C0038D1AA /* ScoreTest.swift */; };
 		D3D1D522299BD0860038D1AA /* BasicScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D1D521299BD0860038D1AA /* BasicScore.swift */; };
+		D3D1D524299BD0EC0038D1AA /* ScoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D1D523299BD0EC0038D1AA /* ScoreTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,8 +108,8 @@
 		D3AC6A21299541B100079195 /* NavigationControllerRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouterTest.swift; sourceTree = "<group>"; };
 		D3AC6A232995422D00079195 /* NavigationControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouter.swift; sourceTree = "<group>"; };
 		D3CCB5A2299887CA0042B34A /* QuizEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QuizEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3D1D51E299BD04C0038D1AA /* ScoreTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScoreTest.swift; path = ../../../QuizEngine/QuizEngineTests/ScoreTest.swift; sourceTree = "<group>"; };
 		D3D1D521299BD0860038D1AA /* BasicScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicScore.swift; sourceTree = "<group>"; };
+		D3D1D523299BD0EC0038D1AA /* ScoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,7 +391,7 @@
 		D3D1D51D299BD0340038D1AA /* Scoring */ = {
 			isa = PBXGroup;
 			children = (
-				D3D1D51E299BD04C0038D1AA /* ScoreTest.swift */,
+				D3D1D523299BD0EC0038D1AA /* ScoreTest.swift */,
 			);
 			path = Scoring;
 			sourceTree = "<group>";
@@ -561,10 +561,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3D1D524299BD0EC0038D1AA /* ScoreTest.swift in Sources */,
 				D30B6FCA2996900800749FDA /* ResultsPresenterTest.swift in Sources */,
 				D3AC6A22299541B100079195 /* NavigationControllerRouterTest.swift in Sources */,
 				D317A261299416F100AC9EB9 /* QuestionViewControllerTest.swift in Sources */,
-				D3D1D51F299BD04C0038D1AA /* ScoreTest.swift in Sources */,
 				D30B6FD029969B0F00749FDA /* QuestionPresenterTest.swift in Sources */,
 				D30B6FCC2996908500749FDA /* ResultHelper.swift in Sources */,
 				D3AC69E92995279200079195 /* TableViewHelpers.swift in Sources */,

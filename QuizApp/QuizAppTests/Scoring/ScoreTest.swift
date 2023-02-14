@@ -1,8 +1,8 @@
 //
 //  ScoreTest.swift
-//  QuizEngine
+//  QuizAppTests
 //
-//  Created by Merdin Kahrimanovic on 13/02/2023.
+//  Created by Merdin Kahrimanovic on 14/02/2023.
 //
 
 import Foundation
