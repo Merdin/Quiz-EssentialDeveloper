@@ -16,8 +16,4 @@ protocol ViewControllerFactory {
     func resultViewController(for result: Result<Question<String>, [String]>) -> UIViewController
 }
 
-extension ViewControllerFactory {
-    func resultViewController(for userAnswers: Answers) -> UIViewController {
-        return UIViewController()
-    }
-}
+
