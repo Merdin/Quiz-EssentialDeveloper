@@ -7,6 +7,8 @@
 
 import Foundation
 
+// TODO: Separate QuizDelegate into QuizDataSource with answer(for:) method
+
 public protocol QuizDelegate {
     associatedtype Question
     associatedtype Answer
