@@ -56,7 +56,7 @@ class NavigationControllerRouterTest: XCTestCase {
     
     func test_answerForQuestion_multipleAnswer_answerCallback_doesNotProgressesToNextQuestion() {
         var callbackWasFired = false
-        sut.routeTo(question: multipleAnswerQuestion, answerCallback: { _ in callbackWasFired = true })
+        sut.answer(for: multipleAnswerQuestion, completion: { _ in callbackWasFired = true })
         factory.answerCallback[multipleAnswerQuestion]!(["anything"])
         
         XCTAssertFalse(callbackWasFired)
@@ -148,7 +148,7 @@ class NavigationControllerRouterTest: XCTestCase {
         }
         
         func resultViewController(for userAnswers: Answers) -> UIViewController {
-            return  stubbedResults[userAnswers.map { $0.question }] ?? UIViewController()
+            return stubbedResults[userAnswers.map { $0.question }] ?? UIViewController()
         }
         
         func resultViewController(for result: Result<Question<String>, [String]>) -> UIViewController {
