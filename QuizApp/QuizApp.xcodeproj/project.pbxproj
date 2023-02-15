@@ -190,10 +190,7 @@
 		D32DCC2E2998673800257788 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				D32DCC332998678100257788 /* Helpers */,
-				D32DCC342998678F00257788 /* Launch */,
-				D32DCC312998674C00257788 /* Result */,
-				D32DCC302998674400257788 /* Question */,
+				D3417BAF299CD23400CD8726 /* UIKit */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -360,6 +357,17 @@
 				D3AC6A21299541B100079195 /* NavigationControllerRouterTest.swift */,
 			);
 			path = Routing;
+			sourceTree = "<group>";
+		};
+		D3417BAF299CD23400CD8726 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				D32DCC332998678100257788 /* Helpers */,
+				D32DCC342998678F00257788 /* Launch */,
+				D32DCC312998674C00257788 /* Result */,
+				D32DCC302998674400257788 /* Question */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		D3CCB5A1299887CA0042B34A /* Frameworks */ = {

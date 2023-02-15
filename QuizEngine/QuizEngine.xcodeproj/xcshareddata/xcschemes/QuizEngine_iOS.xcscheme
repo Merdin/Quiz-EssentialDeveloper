@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D3AC6A0429953F8200079195"
-               BuildableName = "QuizEngine.framework"
+               BuildableName = "QuizEngine_iOS.framework"
                BlueprintName = "QuizEngine_iOS"
                ReferencedContainer = "container:QuizEngine.xcodeproj">
             </BuildableReference>
@@ -61,7 +61,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D3AC6A0429953F8200079195"
-            BuildableName = "QuizEngine.framework"
+            BuildableName = "QuizEngine_iOS.framework"
             BlueprintName = "QuizEngine_iOS"
             ReferencedContainer = "container:QuizEngine.xcodeproj">
          </BuildableReference>
